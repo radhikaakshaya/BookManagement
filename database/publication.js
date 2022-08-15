@@ -1,11 +1,11 @@
 const mongoose = require('mongoose')
 
 const PublicationSchema = mongoose.Schema({
- id: Number,
+ pid: Number,
  name: String,
  Books: [Number]
 })
 
-const PublicationModel = mongoose.model(PublicationSchema)
+const PublicationModel = mongoose.model("publications", PublicationSchema)
 
 module.exports = PublicationModel
